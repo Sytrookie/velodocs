@@ -6,6 +6,8 @@ const withNextra = require('nextra')({
 
   module.exports = {
     ...withNextra(),
+    //assetPrefix: isProduction ? '/velocity' : '', 
+    assetPrefix: '/velocity',
     output: 'export',
     distDir: '../docs',
     images: {
