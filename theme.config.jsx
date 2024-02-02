@@ -1,5 +1,11 @@
 export default {
-    logo: <span>Velocity</span>,
+    logo: <>
+      <svg>...</svg>
+      <span>Velocity</span>
+    </>, 
+    path: '/velocity',
+    footer: true,
+    footerText: `Velocity ${new Date().getFullYear()} © Velocity.`,
     project: {
       link: 'https://github.com/Sytrookie/velocity'
     }
