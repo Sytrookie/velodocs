@@ -7,7 +7,7 @@ const withNextra = require('nextra')({
   module.exports = {
     ...withNextra(),
     //assetPrefix: isProduction ? '/velocity' : '', 
-    assetPrefix: '/velocity',
+    assetPrefix: '/assets',
     basePath: '/velocity',
     output: 'export',
     distDir: '../docs',
