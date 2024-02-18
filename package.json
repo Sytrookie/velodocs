@@ -1,14 +1,22 @@
 {
-	"dependencies": {
-		"next": "^14.1.0",
-		"react": "^18.2.0",
-		"react-dom": "^18.2.0",
-		"nextra": "^2.13.3",
-		"nextra-theme-docs": "^2.13.3"
-	},
-	"scripts": {
-		"dev": "next",
-		"build": "next build",
-		"start": "next start"
-	}
+    "name": "nextra-ghpages-template",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build && next export",
+        "start": "next start",
+        "lint": "next lint"
+    },
+    "dependencies": {
+        "next": "^12.1.5",
+        "nextra": "^1.1.0",
+        "nextra-theme-docs": "^1.2.6",
+        "react": "^18.0.0",
+        "react-dom": "^18.0.0"
+    },
+    "devDependencies": {
+        "eslint": "8.13.0",
+        "eslint-config-next": "12.1.5"
+    }
 }

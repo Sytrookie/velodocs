@@ -1,22 +1,9 @@
 const withNextra = require('nextra')({
     theme: 'nextra-theme-docs',
-    themeConfig: './theme.config.jsx'
-  })
+    themeConfig: './theme.config.js',
+    // optional: add `unstable_staticImage: true` to enable Nextra's auto image import
+})
 
-
-  module.exports = {
-    ...withNextra(),
-    //assetPrefix: isProduction ? '/velocity' : '', 
-    assetPrefix: '/assets',
-    basePath: '/velocity',
-    output: 'export',
-    distDir: '../docs',
-    images: {
-      unoptimized: true,
-    },
-  };
-   
-  //module.exports = withNextra()
-   
-  // If you have other Next.js configurations, you can pass them as the parameter:
-  // module.exports = withNextra({ /* other next.js config */ })
+let nextraConfig = withNextra()
+nextraConfig.assetPrefix = './'
+module.exports = nextraConfig
